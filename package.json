@@ -9,8 +9,19 @@
   ],
   "main": "index.js",
   "scripts": {
+    "dev:front": "cd front && npm run dev"
   },
-  "keywords": ["next.js", "react", "tailwind" ],
+  "keywords": [
+    "next.js",
+    "react",
+    "tailwind"
+  ],
   "author": "Cristhian Melo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
 }
