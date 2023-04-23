@@ -1,5 +1,5 @@
 export default function Home () {
   return (
-    <h1>rxtsel</h1>
+    <h1 className='font-urbanist'>rxtsel - holaaa</h1>
   )
 }
