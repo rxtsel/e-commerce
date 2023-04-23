@@ -1,3 +1,5 @@
 export { Body } from './Body'
 export { Header } from './Header'
 export { Footer } from './Footer'
+export { Wrapper } from './Wrapper'
+export { Menu } from './Menu'
