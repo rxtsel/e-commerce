@@ -1,13 +1,14 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Main, Head, NextScript } from 'next/document'
+import { Body } from '@/components'
 
 export default function Document () {
   return (
-    <Html lang='en'>
+    <Html lang='es'>
       <Head />
-      <body>
+      <Body>
         <Main />
         <NextScript />
-      </body>
+      </Body>
     </Html>
   )
 }
