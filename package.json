@@ -10,6 +10,7 @@
   "main": "index.js",
   "scripts": {
     "dev:front": "cd front && npm run dev",
+    "build:front": "cd front && npm run build",
     "phoenix": "rm -rf ./node_modules ./package-lock.json ./front/.next && npm i"
   },
   "keywords": [
