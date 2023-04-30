@@ -13,7 +13,7 @@ export function Header () {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   const controlNavbar = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 80) {
       if (window.scrollY > lastScrollY) {
         setShow('-translate-y-[80px]')
       } else {
@@ -40,7 +40,7 @@ export function Header () {
         <Link href='/'>
           <Image
             src='/logo.svg'
-            className='w-[40px] md:w-[80px] aspect-square object-contain'
+            className='w-[40px] md:w-[50px] aspect-square object-contain'
             width={40}
             height={40}
             alt='puede ser una imagen del logo de rxtsel'
