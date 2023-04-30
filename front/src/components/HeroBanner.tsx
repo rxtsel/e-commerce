@@ -52,7 +52,7 @@ export function HeroBanner () {
         {images.map((image, index) => (
           <div key={index}>
             <img
-              className='aspect-[16/10] md:aspect-auto object-cover select-none'
+              className='aspect-[16/10] md:aspect-auto object-cover select-none md:max-h-[calc(95vh-80px)]'
               src={image}
               alt='puede ser una imagen de un producto'/>
 
