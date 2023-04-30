@@ -1,3 +1,98 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* PRODUCT CAROUSEL STYLES CUSTOM */
+.productCarousel.carousel-root {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+
+.productCarousel.carousel-root .carousel {
+  width: auto;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider {
+  width: 100%;
+}
+
+.productCarousel.carousel-root .carousel.carousel-slider .slider-wrapper {
+  border-radius: 15px;
+}
+
+.productCarousel.carousel-root .carousel .thumb {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.productCarousel.carousel-root .carousel .thumb img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.productCarousel.carousel-root .carousel .thumb::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.productCarousel.carousel-root .carousel .thumb.selected,
+.productCarousel.carousel-root .carousel .thumb:hover {
+  border: 0;
+}
+
+.productCarousel.carousel-root .carousel .thumb:hover::after,
+.productCarousel.carousel-root .carousel .thumb.selected::after {
+  opacity: 0.1;
+}
+
+@media (max-width: 767px) {
+  .productCarousel.carousel-root {
+    flex-direction: column;
+  }
+
+  .productCarousel.carousel-root .carousel .thumb {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .productCarousel.carousel-root .carousel .thumbs {
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .productCarousel.carousel-root .carousel .thumb {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* END PRODUCT CAROUSEL STYLES CUSTOM */
+
+.mardown ul {
+  padding: 0;
+  list-style: disc;
+  margin: 20px 0;
+}
+
+.mardown ul li {
+  margin: 10px 0;
+}
