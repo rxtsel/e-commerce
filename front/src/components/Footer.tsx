@@ -73,7 +73,7 @@ export function Footer () {
                       href={`https://facebook.com/${facebookUser}`}
                       target='_blank'
                       title='facebook'
-                      className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer transition-colors duration-300"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-white/[0.8] cursor-pointer transition-colors duration-300"
                     >
                         <FaFacebookF size={20} />
                     </Link>
@@ -81,7 +81,7 @@ export function Footer () {
                       href={`https://twitter.com/${twitterUser}`}
                       target='_blank'
                       title='twitter'
-                      className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer transition-colors duration-300"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-white/[0.8] cursor-pointer transition-colors duration-300"
                     >
                         <FaTwitter size={20} />
                     </Link>
@@ -89,7 +89,7 @@ export function Footer () {
                       href={`https://youtube.com/@${youtubeUser}`}
                       target='_blank'
                       title='youtube'
-                      className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer transition-colors duration-300"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-white/[0.8] cursor-pointer transition-colors duration-300"
                     >
                         <FaYoutube size={20} />
                     </Link>
@@ -97,7 +97,7 @@ export function Footer () {
                       href={`https://instagram.com/${instagramUser}`}
                       target='_blank'
                       title='instagram'
-                      className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer transition-colors duration-300"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-white/[0.8] cursor-pointer transition-colors duration-300"
                     >
                         <FaInstagram size={20} />
                     </Link>
