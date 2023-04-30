@@ -17,8 +17,8 @@ export function Menu ({ showCat, setShowCat, isOpen }: MenuProps) {
   ]
 
   const subMenuData = [
-    {id: 1, name: 'Categoría 1', url: '/categoria-1'},
-    {id: 2, name: 'Categoría 2', url: '/categoria-2'},
+    {id: 1, name: 'Old School', url: '/category/old-school'},
+    {id: 2, name: 'Running', url: '/category/running'},
   ]
 
   const showSubMenu = (e: any) => {
