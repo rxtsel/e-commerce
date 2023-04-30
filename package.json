@@ -18,5 +18,8 @@
     "tailwind"
   ],
   "author": "Cristhian Melo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-responsive-carousel": "3.2.23"
+  }
 }

@@ -1,5 +1,11 @@
+import { HeroBanner } from '@/components'
+
 export default function Home () {
   return (
-    <h1 className='font-urbanist'>rxtsel - holaaa</h1>
+    <>
+      <main>
+        <HeroBanner />
+      </main>
+    </>
   )
 }
