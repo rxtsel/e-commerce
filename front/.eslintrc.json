@@ -3,6 +3,8 @@
   "rules": {
     "semi": "off",
     "react/react-in-jsx-scope": "off",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "@next/next/no-img-element": "off",
+    "react-hooks/exhaustive-deps": "off"
   }
 }
