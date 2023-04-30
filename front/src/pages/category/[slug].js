@@ -1,15 +1,12 @@
 import { useRouter } from 'next/router'
 import { Wrapper, ProductCard } from '@/components'
+import { slugToTitle } from '@/utils'
 
-const slugToTitle = (slug) => {
-  return slug.includes('-')
-    ? slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-    : slug.charAt(0).toUpperCase() + slug.slice(1)
-}
+export default function Category () { 
 
-export default function Category () {
   const router = useRouter()
   const { slug } = router.query
+  const title = slugToTitle(slug)
   return (
     <div className='w-full md:py-20'>
       <Wrapper>
@@ -17,9 +14,7 @@ export default function Category () {
           <h1
             className='text-[28px] md:text-[34px] mb-5 font-semibold leading-tight'
           >
-            {
-              slugToTitle(slug)
-            }
+            {title}
           </h1>
         </div>
 
