@@ -74,8 +74,8 @@ export function Header () {
             onClick={() => setIsOpen(!isOpen)}
           >
             {!isOpen
-              ? <BiMenuAltRight className='text-[15px] md:text-[20px]' />
-              : <VscChromeClose className='text-[15px] md:text-[20px]' />
+              ? <BiMenuAltRight className='text-[20px] md:text-[20px]' />
+              : <VscChromeClose className='text-[20px] md:text-[20px]' />
             }
           </div>
           {/* end burger icon */}
