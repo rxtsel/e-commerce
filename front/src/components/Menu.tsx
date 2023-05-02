@@ -4,11 +4,12 @@ import { BsChevronDown } from 'react-icons/bs'
 
 interface MenuProps {
   showCat: boolean
-  setShowCat: React.Dispatch<React.SetStateAction<boolean>>
+  setShowCat: (showCat: boolean) => void
   isOpen: boolean
+  setIsOpen: (isOpen: boolean) => void 
 }
 
-export function Menu ({ showCat, setShowCat, isOpen }: MenuProps) {
+export function Menu ({ showCat, setShowCat, isOpen, setIsOpen }: MenuProps) {
   const data = [
     {id: 1, name: 'Inicio', url: '/'},
     {id: 2, name: 'Nosotros', url: '/nosotros'},
@@ -60,6 +61,7 @@ export function Menu ({ showCat, setShowCat, isOpen }: MenuProps) {
                       <Link
                         key={subItem.id}
                         href={subItem.url}
+                        onClick={() => setIsOpen(false)}
                       >
                         <li
                           className='cursor-pointer h-12 flex items-center justify-between px-3 hover:bg-black/[0.03] rounded-md'
@@ -74,7 +76,10 @@ export function Menu ({ showCat, setShowCat, isOpen }: MenuProps) {
               </li>
             )
             : (
-              <Link href={item.url ?? ''}>
+              <Link
+                href={item.url ?? ''}
+                onClick={() => setIsOpen(false)}
+              >
                 <li className='cursor-pointer py-4 md:py-0'>{item.name}</li>
               </Link>
             )

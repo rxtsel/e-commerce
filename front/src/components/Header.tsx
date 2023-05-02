@@ -50,6 +50,7 @@ export function Header () {
         <Menu
           showCat={showCat}
           setShowCat={setShowCat}
+          setIsOpen={setIsOpen}
           isOpen={isOpen}
         />
 
